@@ -1,0 +1,79 @@
+<style>
+    .bname-stats-total {
+  font-family: "Roboto";
+}
+.bname-stats-total__heading {
+  margin: 0 0 20px 0;
+  display: block;
+  font-size: 28px;
+}
+.bname-stats-total__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.bname-stats-total__item {
+  height: 90px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 3px 3px #e1dfdf;
+          box-shadow: 0 3px 3px #e1dfdf;
+  width: 240px;
+  border: 1px solid #e1dfdf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 16px;
+  margin-bottom: 10px;
+}
+.bname-stats-total__left {
+  width: 90px;
+}
+.bname-stats-total__right {
+  margin: auto 0;
+  color: #333;
+  font-size: 28px;
+}
+.bname-stats-total__text {
+  display: block;
+  font-size: 15px;
+  color: #a1a8a8;
+}
+
+</style>
+<div class="bname-stats-total">
+    <h1 class="bname-stats-total__heading">
+        {$args['bname_name']} Statistics
+    </h1>
+    <div class="bname-stats-total__wrapper">
+        <div class="bname-stats-total__item">
+            <div class="bname-stats-total__left" style="background: url(https://www.consumercomplaints.in/fw/tb-complaints.png) 50% 50% no-repeat">
+
+            </div>
+            <div class="bname-stats-total__right">
+                {$args['bname_complaints']}
+                <span class="bname-stats-total__text">Total complaints</span>
+            </div>
+        </div>
+        <div class="bname-stats-total__item">
+            <div class="bname-stats-total__left" style="background: url(https://www.consumercomplaints.in/fw/tb-resolved.png) 50% 50% no-repeat">
+
+            </div>
+            <div class="bname-stats-total__right">
+                {$args['bname_resolved']}
+                <span class="bname-stats-total__text">Total Resolved</span>
+            </div>
+        </div>
+        <div class="bname-stats-total__item">
+            <div class="bname-stats-total__left" style="background: url(https://www.consumercomplaints.in/fw/tb-comments.png) 50% 50% no-repeat">
+
+            </div>
+            <div class="bname-stats-total__right">
+                {$args['bname_comments']}
+                <span class="bname-stats-total__text">Total comments</span>
+            </div>
+        </div>
+    </div>
+</div>

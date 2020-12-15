@@ -1,0 +1,35 @@
+.bname-stats-total {
+    font-family: "Roboto";
+    &__heading {
+        margin: 0 0 20px 0;
+        display: block;
+        font-size: 28px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        height: 90px;
+        box-sizing: border-box;
+        box-shadow: 0 3px 3px #e1dfdf;
+        width: 240px;
+        border: 1px solid #e1dfdf;
+        display: flex;
+        margin-right: 16px;
+        margin-bottom: 10px;
+    }
+    &__left {
+        width: 90px;
+    }
+    &__right {
+        margin: auto 0;
+        color: #333;
+        font-size: 28px;
+    }
+    &__text {
+        display: block;
+        font-size: 15px;
+        color: #a1a8a8;
+    }
+}
